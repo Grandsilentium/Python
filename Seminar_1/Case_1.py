@@ -7,19 +7,20 @@
 #     - 1 -> нет
 
 
-# number = int(input('Введите число: '))
-# if number == 6 or number == 7:
-#     print(f'{number} -> "Да"')
-# else:
-#     print(f'{number} -> "нет"')
+number = int(input('Введите число: '))
+if number == 6 or number == 7:
+    print(f'{number} -> "Да"')
+else:
+    print(f'{number} -> "нет"')
 
 # # 2 Напишите программу для. проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат.
-# print('x y z result')
-# for x in range(2):
-#     for y in range(2):
-#         for z in range(2):
-#             print(x, y, z, not (x or y or z) ==
-#                   (not (x and not y and not z)))
+
+print('x y z result')
+for x in range(2):
+    for y in range(2):
+        for z in range(2):
+            print(x, y, z, not (x or y or z) ==
+                  (not (x and not y and not z)))
 
 # # 3. Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка (или на какой оси она находится).
 
@@ -29,30 +30,30 @@
 # # - x=2; y=4-> 1
 # # - x=-34; y=-30 -> 3
 
-# point_x = int(input('введите x координату точки: '))
-# point_y = int(input('введите y координату точки: '))
+point_x = int(input('введите x координату точки: '))
+point_y = int(input('введите y координату точки: '))
 
-# if (point_x > 0 and point_y > 0):
-#     print('-> 1')
-# elif (point_x < 0 and point_y > 0):
-#     print('-> 2')
-# elif (point_x < 0 and point_y < 0):
-#     print('-> 3')
-# elif (point_x > 0 and point_y < 0):
-#     print('-> 4')
+if (point_x > 0 and point_y > 0):
+    print('-> 1')
+elif (point_x < 0 and point_y > 0):
+    print('-> 2')
+elif (point_x < 0 and point_y < 0):
+    print('-> 3')
+elif (point_x > 0 and point_y < 0):
+    print('-> 4')
 
 # # 4 Напишите программу, которая по заданному номеру четверти, показывает диапазон возможных координат точек в этой четверти (x и y).
 
-# quarter_number = int(input('Введите номер четверти: '))
+quarter_number = int(input('Введите номер четверти: '))
 
-# if (quarter_number == 1):
-#     print(" x [0: + ∞], y [0: + ∞]")
-# elif (quarter_number == 2):
-#     print(" x [0: - ∞], y [0: + ∞]")
-# elif (quarter_number == 3):
-#     print(" x [0: - ∞], y [0: - ∞]")
-# elif (quarter_number == 4):
-#     print(" x [0: + ∞], y [0: - ∞]")
+if (quarter_number == 1):
+    print(" x [0: + ∞], y [0: + ∞]")
+elif (quarter_number == 2):
+    print(" x [0: - ∞], y [0: + ∞]")
+elif (quarter_number == 3):
+    print(" x [0: - ∞], y [0: - ∞]")
+elif (quarter_number == 4):
+    print(" x [0: + ∞], y [0: - ∞]")
 
 # # 5 Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
 
