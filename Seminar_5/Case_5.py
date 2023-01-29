@@ -37,7 +37,7 @@ def bot_round(max_num, num):
     print(f'Бот берет {take_candy} конфет(у).')
     return take_candy    
 
-candy = 201
+candy = 2021
 max_candy = 28
 print(f'  На столе лежит {candy} конфет(а). Играют два игрока делая ход друг после друга. \
 Первый ход определяется жеребьёвкой.\nЗа один ход можно забрать не более чем {max_candy} конфет. \
