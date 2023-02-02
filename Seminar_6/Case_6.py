@@ -8,8 +8,10 @@
 
 n = int(input())
 m = int(input())
-def pow(n, m): return n**m
-print(pow(n, m))
+
+pow = lambda x, y: x**y
+
+print(pow(n,m))
 
 
 
@@ -17,14 +19,13 @@ print(pow(n, m))
 
 Задайте список из нескольких чисел. Напишите программу, которая оставит в списке только нечетные элементы.
 
+
 my_list = [2, 3, 5, 9, 3]
 print(my_list)
-def select(x): return x % 2 != 0
+select = lambda x : x % 2 != 0
 
 
 print(list(filter(select, my_list)))
-
-
 
 # 3 Пример использования map
 
